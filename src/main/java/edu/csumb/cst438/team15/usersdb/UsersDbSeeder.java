@@ -22,9 +22,9 @@ public class UsersDbSeeder implements CommandLineRunner {
         usersRepo.deleteAll();
         
         //add db seeds
-        List<User> users = Arrays.asList(rayleen,manjit,irais);
+        List<User> user = Arrays.asList(rayleen,manjit,irais);
         
-        usersRepo.saveAll(users);
+        usersRepo.saveAll(user);
     }
 
 }

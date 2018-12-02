@@ -12,12 +12,12 @@ import edu.csumb.cst438.team15.usersdb.entities.User;
 @RestController
 public class UsersController {
     @Autowired
-    IUsersRepository usersRepository;
+    IUsersRepository userRepository;
 
     @CrossOrigin(origins = "*") 
     @RequestMapping("/allUsers")
-    public List<User> getAll() {
-        List<User> result = usersRepository.findAll();
+    public List<User> getAllUser() {
+        List<User> result = userRepository.findAll();
         return result;
     }
 }
