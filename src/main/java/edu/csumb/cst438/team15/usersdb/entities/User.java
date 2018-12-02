@@ -16,7 +16,7 @@ public class User {
         this.credit = credit;
     }
 
-    public String getUser(){
+    public String getUsername(){
         return this.username;
     }
     public String getPassword(){
@@ -25,7 +25,7 @@ public class User {
     public int getCredit(){
         return this.credit;
     }
-    public void setUser(String username){
+    public void setUsername(String username){
         this.username = username;
     }
     public void setPassword(String password){
