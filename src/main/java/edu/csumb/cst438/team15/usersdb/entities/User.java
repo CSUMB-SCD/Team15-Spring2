@@ -25,7 +25,7 @@ public class User {
     public int getCredit(){
         return this.credit;
     }
-    public void setName(String userName){
+    public void setUser(String userName){
         this.username = userName;
     }
     public void setPassword(String password){
