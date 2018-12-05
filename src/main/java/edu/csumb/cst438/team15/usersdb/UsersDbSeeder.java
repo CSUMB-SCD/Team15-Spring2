@@ -14,15 +14,15 @@ public class UsersDbSeeder implements CommandLineRunner {
     IUsersRepository usersRepo;
     @Override
     public void run(String... args) throws Exception {
-        User rayleen = new User("rayleen","testing",1500);
-        User manjit = new User("Manjit","testing2",10000);
-        User irais = new User("Irais","testing3",1243500);
+        User raeleen = new User("Raeleen","password",10000);
+        User manjit = new User("Manjit","password",20000);
+        User irais = new User("Irais","password",35000);
 
         //delete db data
         usersRepo.deleteAll();
         
         //add db seeds
-        List<User> user = Arrays.asList(rayleen,manjit,irais);
+        List<User> user = Arrays.asList(raeleen,manjit,irais);
         
         usersRepo.saveAll(user);
     }
