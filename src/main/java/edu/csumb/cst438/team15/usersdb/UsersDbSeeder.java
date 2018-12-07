@@ -14,9 +14,9 @@ public class UsersDbSeeder implements CommandLineRunner {
     IUsersRepository usersRepo;
     @Override
     public void run(String... args) throws Exception {
-        User raeleen = new User("Raeleen","password",10000);
-        User manjit = new User("Manjit","password",20000);
-        User irais = new User("Irais","password",35000);
+        User raeleen = new User("Raeleen","password",1000);
+        User manjit = new User("Manjit","password",2000);
+        User irais = new User("Irais","password",3000);
 
         //delete db data
         usersRepo.deleteAll();
